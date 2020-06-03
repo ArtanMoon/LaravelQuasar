@@ -1,0 +1,13 @@
+GET http://127.0.0.1:8000/
+
+####
+POST http://127.0.0.1:8000/api/v1/oauth/token
+
+{
+   "username":"mbtolou",
+   "password":"tpk6210248",
+   "grant_type":"password",
+}
+
+####
+

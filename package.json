@@ -1,0 +1,96 @@
+{
+    "name": "laravelquasar",
+    "version": "1.0.0",
+    "description": "Laravel with Quasar Framework (SPA) by mbtolou.",
+    "productName": "Laravel with Quasar Framework",
+    "cordovaId": "com.mbtolou",
+    "keywords": [
+        "laravel",
+        "php",
+        "vuejs",
+        "vue",
+        "quasar",
+        "js",
+        "phone",
+        "tablet",
+        "desktop",
+        "spa",
+        "pwa",
+        "website",
+        "electron"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbtolou/LaravelQuasar.git"
+    },
+    "author": {
+        "name": "Emanuel Chable Concepcion",
+        "email": "mb.tolou@gmail.com",
+        "url": "https://mbtolou.com/"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mbtolou/LaravelQuasar/issues"
+    },
+    "homepage": "https://quasar-framework.org",
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "lint": "eslint --ext .js,.vue src",
+        "q-ssr-build": "quasar build -m ssr",
+        "q-ssr-dev": "quasar dev -m ssr",
+        "q-spa-build": "quasar build",
+        "q-spa-dev": "quasar dev -H 127.0.0.1"
+    },
+    "devDependencies": {
+        "@quasar/app": "^1.2.1",
+        "@quasar/quasar-app-extension-dotenv": "^1.0.0-beta.11",
+        "@quasar/quasar-app-extension-icon-genie": "^1.1.1",
+        "@vue/eslint-config-standard": "^4.0.0",
+        "babel-eslint": "^10.0.3",
+        "babel-plugin-syntax-dynamic-import": "^6.18.0",
+        "cross-env": "^6.0.3",
+        "eslint": "^6.5.1",
+        "eslint-loader": "^3.0.2",
+        "eslint-plugin-vue": "^5.2.3",
+        "laravel-mix": "^5.0.0",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.23.0",
+        "sass-loader": "^8.0.0",
+        "stylus": "^0.54.7",
+        "stylus-loader": "^3.0.2",
+        "webpack-require-http": "^0.4.3"
+    },
+    "dependencies": {
+        "@quasar/extras": "^1.3.2",
+        "axios": "^0.19.0",
+        "lodash": "^4.17.15",
+        "moment": "^2.24.0",
+        "moment-timezone": "^0.5.26",
+        "quasar": "^1.2.1",
+        "samim-font": "^1.0.2",
+        "shabnam-font": "^5.0.0",
+        "vazir-font": "^21.2.1",
+        "vee-validate": "^3.0.11",
+        "vue": "^2.6.10",
+        "vue-i18n": "^8.14.1",
+        "vue-moment": "^4.0.0",
+        "vue-recaptcha": "^1.2.0",
+        "vue-router": "^3.1.3",
+        "vuex": "^3.1.1"
+    },
+    "engines": {
+        "node": ">= 8.9.0",
+        "npm": ">= 5.6.0",
+        "yarn": ">= 1.6.0"
+    },
+    "browserslist": [
+        "last 1 version, not dead, ie >= 11"
+    ]
+}
